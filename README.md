@@ -1,6 +1,42 @@
 # vue-study-simple
 
+## Install
+```
+npm install
+```
+## Run
+### Development
+```
+npm run dev
+```
+### Production(Build)
+```
+npm run build
+```
+## 文件结构
+```shell
+.
+├── build  项目构建配置
+├── config  开发相关配置
+├── public  打包所需静态资源
+└── src
+    ├── api  AJAX请求
+    └── assets  项目静态资源
+        ├── img  图片资源
+        └── js   公共的js文件
+    ├── components  业务组件
+    ├── mock  mock模拟数据
+    ├── plugins  引用的插件
+    ├── router  路由配置
+    ├── store  Vuex配置
+    ├── view  页面文件
+    └── tests  测试相关
+```
+
 ## 项目说明
+
+  基于`vue-cli@3.x`搭建，项目配置更加简洁；
+
 
 * UI框架
   
@@ -18,4 +54,6 @@
 * 其他事项
   
   项目已经引入了`vuex`和`mockjs`，有需要的可以按需使用
+
+
 

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import store from '@/store'
+import store from '@/store/store'
 import iView from 'iview'
 import { setToken, getToken, canTurnTo } from '@/assets/js/utils'
 Vue.use(Router)

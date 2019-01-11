@@ -1,0 +1,136 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:README</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="vue-study-simple">vue-study-simple</h1>
+<h2 id="install">Install</h2>
+<pre><code class="lang-bush">// install dependencies
+npm install
+</code></pre>
+<h2 id="run">Run</h2>
+<h3 id="development">Development</h3>
+<pre><code class="lang-bush">npm run dev
+</code></pre>
+<h3 id="production-build-">Production(Build)</h3>
+<pre><code class="lang-bush">npm run build
+</code></pre>
+<h2 id="-">文件结构</h2>
+<pre><code class="lang-shell">.
+├── build  项目构建配置
+├── config  开发相关配置
+├── public  打包所需静态资源
+└── src
+    ├── api  AJAX请求
+    └── assets  项目静态资源
+        ├── img  图片资源
+    ├── components  业务组件
+    ├── mock  mock模拟数据
+    ├── plugins  引用的插件
+    ├── router  路由配置
+    ├── store  Vuex配置
+    ├── view  页面文件
+    └── tests  测试相关
+</code></pre>
+<h2 id="-">项目说明</h2>
+<p>  基于<a href="mailto:`vue-cli@3.x">`vue-cli@3.x</a>`搭建，项目配置更加简洁；</p>
+<ul>
+<li><p>UI框架</p>
+<p>项目目前已全局依赖了<a href="http://element-cn.eleme.io/#/zh-CN/component/installation"><code>element-ui</code></a>和<a href="https://www.iviewui.com/docs/guide/install"><code>iview</code></a></p>
+</li>
+<li><p>数据交互</p>
+<p>项目目前已依赖了<code>axios</code>和<code>vue-resource</code>，使用方法分别是<code>this.$axios</code>和<code>this.$http</code></p>
+</li>
+<li><p>路由文件</p>
+<p>路由统一写在<code>router</code>文件夹的<code>index.js</code>文件内，如有需要，你可以自己创建新的文件用于存放路由</p>
+</li>
+</ul>
+<ul>
+<li><p>其他事项</p>
+<p>项目已经引入了<code>vuex</code>和<code>mockjs</code>，有需要的可以按需使用</p>
+</li>
+</ul>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>
